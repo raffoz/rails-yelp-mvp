@@ -1,2 +1,42 @@
 // Specific CSS for your home-page
 
+h1 {
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 8px 0 8px;
+}
+
+.restaurant-card {
+  display: flex;
+  height: 55px;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid gray;
+  margin: 16px 0 0 0;
+  padding: 8px 16px;
+
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+.restaurant-new, .review-new {
+  margin: 16px auto;
+}
+
+#button-create-back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 0px 8px;
+}
+
+.restaurant-details {
+  background-color: lightgray;
+  padding: 8px;
+}

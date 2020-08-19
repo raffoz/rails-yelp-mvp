@@ -1,12 +1,15 @@
-<div class="container">
-  <div class="row">
+  <h1>Add a restaurant</h1>
+  <div class="restaurant-new">
     <%= simple_form_for (@restaurant) do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :phone_number %>
     <%= f.input :category, collection: Restaurant::CATEGORIES %>
-    <%= f.submit %>
+    <div id="button-create-back">
+      <%= f.submit class: 'btn btn-primary mt-2' %>
+      <%= link_to "Back to list", restaurants_path %>
+    </div>
     <% end %>
   </div>
-  <%= link_to "Back to list", restaurants_path %>
-</div>
+
+

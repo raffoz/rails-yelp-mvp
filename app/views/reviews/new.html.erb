@@ -1,9 +1,11 @@
-<div class="container">
-  <div class="row"><%= simple_form_for [ @restaurant, @review ] do |f| %>
+<h1>Leave a review</h1>
+<div class="review-new">
+  <%= simple_form_for [ @restaurant, @review ] do |f| %>
     <%= f.input :content %>
     <%= f.input :rating, collection: 0..5 %>
-    <%= f.submit "Submit review", class: "btn btn-primary" %>
+    <div id="button-create-back">
+      <%= f.submit "Submit review", class: "btn btn-primary mt-2" %>
+      <%= link_to "Back to list", restaurants_path %>
+    </div>
   <% end %>
-  </div>
-  <%= link_to "Back to list", restaurants_path %>
 </div>
