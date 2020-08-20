@@ -4,7 +4,6 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.all
   end
 
-
   def new
     @restaurant = Restaurant.new
   end
@@ -21,6 +20,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1
   def show
     @restaurant = Restaurant.find(params[:id])
+    @review = Review.new
   end
 
   private

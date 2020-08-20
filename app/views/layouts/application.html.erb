@@ -14,8 +14,9 @@
 
   <body>
     <div class="container">
-      <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-        <img src="http://localhost:3000/assets/location-b50966a9a3b401c4e3267ce4679d574415066a53ea9a2059ef7d1cc71e417ae8.png" >
+      <div class="navbar navbar-expand-sm navbar-light navbar-lewagon shadow-lg">
+        <img src="http://localhost:3000/assets/location-b50966a9a3b401c4e3267ce4679d574415066a53ea9a2059ef7d1cc71e417ae8.png" title="Restaurant list" >
+
 <!--         <%= link_to restaurants_path, class: "navbar-brand" do %>
           <%= image_tag "location.png" %>
           <% end %> -->
@@ -25,12 +26,12 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <%= link_to restaurants_path, class: "nav-link" do %>
-              <%= image_tag "list.png" %>
+              <%= image_tag "list.png", title: "All restaurants" %>
               <% end %>
             </li>
             <li class="nav-item">
               <%= link_to new_restaurant_path, class: "nav-link" do %>
-              <%= image_tag "new.png" %>
+              <%= image_tag "new.png", title: "Add a restaurant" %>
               <% end %>
             </li>
           </ul>
